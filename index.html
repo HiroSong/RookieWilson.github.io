@@ -174,7 +174,7 @@
 <p>空元素：不包含任何内容 <code>&lt;details&gt;&lt;/details&gt;</code> 或者 <code>&lt;details/&gt;</code></p>
 <p>属性：不能独立于元素存在，以名-值对的形式出现，同一元素的属性没有先后顺序，通过名称区别。<br>取值必须加上引号。<br>命名规则遵循元素命名规则。<br>写在开始标记内<br><code>&lt;details about=”Location”/&gt;</code></p>
 <p>元素\属性的选用：简单无结构数据可以使用属性，若为有结构或者数目可变的数据应该使用元素。</p>
-<p>预定义实体：为了避免冲突<br>&lt; <code>&amp;lt;</code>  &gt; <code>&amp;gt;</code>  &amp; <code>&amp;amp;</code>  ‘ <code>&amp;apos;</code>  “ <code>&amp;quot;</code></p>
+<p>预定义实体：为了避免冲突<br>&lt; <code>\&amp;lt;</code>  &gt; <code>\&amp;gt;</code>  &amp; <code>\&amp;amp;</code>  ‘ <code>\&amp;apos;</code>  “ <code>\&amp;quot;</code></p>
 <h1 id="2）CDATA"><a href="#2）CDATA" class="headerlink" title="2）CDATA"></a>2）CDATA</h1><p>CDATA：用于存放含有大量特殊字符的文本内容，避免大量使用预定义实体而降低文档可读性&lt;![CDATA[……]]&gt;</p>
 <p>注意：CDATA段中的文本内容不能直接出现]]&gt;并且CDATA段不要嵌套使用</p>
 <p>示例：<br><code>&lt;name&gt;&lt;![CDATA[ You &amp; Me, &lt;Tom&gt; &amp; &lt;Jerry&gt; ]]&gt;&lt;/name&gt;</code></p>
